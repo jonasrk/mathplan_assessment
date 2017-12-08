@@ -1,0 +1,58 @@
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="university" type="university" />
+        
+    <xs:complexType name="university">
+        <xs:sequence>
+            <xs:element name="lectures" type="lectures"/>
+            <xs:element name="curricula" type="curricula"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="lectures">
+        <xs:sequence>
+            <xs:element name="lecture" type="lecture" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="curricula">
+        <xs:sequence>
+            <xs:element name="curriculum" type="curriculum" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="lecture">
+        <xs:sequence>
+            <xs:element name="id" type="xs:ID"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="roombookings" type="roombookings"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="roombookings">
+        <xs:sequence>
+            <xs:element name="booking" type="booking" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="booking">
+        <xs:sequence>
+            <xs:element name="room" type="xs:string"/>
+            <xs:element name="weekday" type="xs:string"/>
+            <xs:element name="startTime" type="xs:time"/>
+            <xs:element name="endTime" type="xs:time"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="curriculum">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="lecture" type="xs:IDREF" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
