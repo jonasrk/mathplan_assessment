@@ -2,6 +2,7 @@ package io.github.jonasrk;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -75,10 +76,12 @@ public class Main {
 
         List<Booking> bookings = new ArrayList<Booking>();
 
-        int number_of_bookings = document.getElementsByTagName("booking").getLength();
+        NodeList nodeList = document.getElementsByTagName("booking");
+
+        int number_of_bookings = nodeList.getLength();
 
         for (int i = 0; i < number_of_bookings; i++) {
-            Node current_booking = document.getElementsByTagName("booking").item(i);
+            Node current_booking = nodeList.item(i);
             String id = current_booking.getParentNode().getParentNode().getChildNodes().item(1).getTextContent();
             String current_room = current_booking.getChildNodes().item(1).getTextContent();
             String current_weekday = current_booking.getChildNodes().item(3).getTextContent();
