@@ -40,15 +40,19 @@ public class Main {
                 this.end_time = end_time;
             }
 
+            private Boolean time_of_day_has_conflict(Booking other){
+                if (other.end_time.before(this.start_time) | other.end_time.before(this.start_time)){
+                    return false;
+                } else if (other.start_time.after(this.end_time) | other.start_time.equals(this.end_time)){
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
             public Boolean has_room_conflict(Booking other){
                 if (other.weekday.equals(this.weekday) & other.room.equals(this.room)){
-                    if (other.end_time.before(this.start_time) | other.end_time.before(this.start_time)){
-                        return false;
-                    } else if (other.start_time.after(this.end_time) | other.start_time.equals(this.end_time)){
-                        return false;
-                    } else {
-                        return true;
-                    }
+                    return time_of_day_has_conflict(other);
                 } else {
                     return false;
                 }
@@ -58,13 +62,7 @@ public class Main {
                 ArrayList<String> intersection = new ArrayList<String>(this.curricula);
                 intersection.retainAll(other.curricula);
                 if (intersection.size() > 0 & this.lecture_id != other.lecture_id & other.weekday.equals(this.weekday)){
-                    if (other.end_time.before(this.start_time) | other.end_time.before(this.start_time)){
-                        return false;
-                    } else if (other.start_time.after(this.end_time) | other.start_time.equals(this.end_time)){
-                        return false;
-                    } else {
-                        return true;
-                    }
+                    return time_of_day_has_conflict(other);
                 } else {
                     return false;
                 }
