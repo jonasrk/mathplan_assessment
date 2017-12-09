@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="392c2e04-9c32-484d-976e-51264e9f1569" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Mathplanner/io/github/jonasrk/Main$1Booking.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mathplanner/io/github/jonasrk/Main.class" afterPath="$PROJECT_DIR$/out/production/Mathplanner/io/github/jonasrk/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jonasrk/Main.java" afterPath="$PROJECT_DIR$/src/io/github/jonasrk/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" afterPath="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +33,8 @@
       <file leaf-file-name="Booking.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Booking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="330">
+              <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#277#285#0" expanded="true" />
@@ -125,8 +121,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" />
         <option value="$PROJECT_DIR$/src/io/github/jonasrk/Main.java" />
+        <option value="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" />
       </list>
     </option>
   </component>
@@ -283,12 +279,12 @@
       <updated>1512490788288</updated>
       <workItem from="1512490793059" duration="3452000" />
       <workItem from="1512725732917" duration="5676000" />
-      <workItem from="1512819035833" duration="2377000" />
+      <workItem from="1512819035833" duration="2514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11505000" />
+    <option name="totallyTimeSpent" value="11642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1053" extended-state="6" />
@@ -524,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Booking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="330">
+          <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#277#285#0" expanded="true" />

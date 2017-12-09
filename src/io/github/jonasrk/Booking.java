@@ -20,7 +20,7 @@ class Booking {
     }
 
     private Boolean time_of_day_has_conflict(Booking other){
-        if (other.end_time.before(this.start_time) | other.end_time.before(this.start_time)){
+        if (other.end_time.before(this.start_time) | other.end_time.equals(this.start_time)){
             return false;
         } else if (other.start_time.after(this.end_time) | other.start_time.equals(this.end_time)){
             return false;
