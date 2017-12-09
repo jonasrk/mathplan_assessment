@@ -1,6 +1,7 @@
 package io.github.jonasrk;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
@@ -80,17 +81,17 @@ public class Main {
 
         for (int i = 0; i < number_of_bookings; i++) {
             Node current_booking = nodeList.item(i);
-            String id = current_booking.getParentNode().getParentNode().getChildNodes().item(1).getTextContent();
-            String current_room = current_booking.getChildNodes().item(1).getTextContent();
-            String current_weekday = current_booking.getChildNodes().item(3).getTextContent();
+            String id = ((Element) current_booking.getParentNode().getParentNode()).getElementsByTagName("id").item(0).getTextContent();
+            String current_room = ((Element) current_booking.getChildNodes()).getElementsByTagName("room").item(0).getTextContent();
+            String current_weekday = ((Element) current_booking.getChildNodes()).getElementsByTagName("weekday").item(0).getTextContent();
 
             SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
 
-            String current_start_time = current_booking.getChildNodes().item(5).getTextContent();
+            String current_start_time = ((Element) current_booking.getChildNodes()).getElementsByTagName("startTime").item(0).getTextContent();
             Date current_start_date = format.parse(current_start_time);
 
 
-            String current_end_time = current_booking.getChildNodes().item(7).getTextContent();
+            String current_end_time = ((Element) current_booking.getChildNodes()).getElementsByTagName("endTime").item(0).getTextContent();
             Date current_end_date = format.parse(current_end_time);
 
             bookings.add(new Booking(id, current_weekday, current_room, current_start_date, current_end_date));
@@ -99,17 +100,20 @@ public class Main {
 
         // add curricula to bookings
 
-        int number_of_curricula = document.getElementsByTagName("curriculum").getLength();
+        NodeList curricula = document.getElementsByTagName("curriculum");
+
+        int number_of_curricula = curricula.getLength();
 
         for (int i = 0; i < number_of_curricula; i++) {
-            Node current_curriculum = document.getElementsByTagName("curriculum").item(i);
-            String name = current_curriculum.getChildNodes().item(1).getTextContent();
+            Node current_curriculum = curricula.item(i);
+            String name = ((Element) current_curriculum.getChildNodes()).getElementsByTagName("name").item(0).getTextContent();
 
-            int length = current_curriculum.getChildNodes().getLength();
+            NodeList lectures = ((Element) current_curriculum.getChildNodes()).getElementsByTagName("lecture");
+            int length = lectures.getLength();
 
-            for (int j = 3; j < length; j += 2) {
+            for (int j = 0; j < length; j ++) {
 
-                String lecture_id = current_curriculum.getChildNodes().item(j).getTextContent();
+                String lecture_id = lectures.item(j).getTextContent();
 
                 bookings.forEach(x -> {
                     if (x.lecture_id.equals(lecture_id)) {
