@@ -29,16 +29,17 @@ public class Main {
         // define class for bookings
 
         class Booking {
-            public String weekday, room, lecture_id;
+            public String weekday, room, lecture_id, lecture_name;
             public Date start_time, end_time;
             public ArrayList<String> curricula = new ArrayList<String>();
 
-            public Booking(String id, String weekday, String room, Date start_time, Date end_time) {
+            public Booking(String id, String weekday, String room, Date start_time, Date end_time, String lecture_name) {
                 this.lecture_id = id;
                 this.weekday = weekday;
                 this.room = room;
                 this.start_time = start_time;
                 this.end_time = end_time;
+                this.lecture_name = lecture_name;
             }
 
             private Boolean time_of_day_has_conflict(Booking other){
@@ -71,17 +72,22 @@ public class Main {
 
         }
 
+        // read in all bookings and curricula
+
+        NodeList nodeList = document.getElementsByTagName("booking");
+
+        NodeList curricula = document.getElementsByTagName("curriculum");
+
         // create list of all bookings
 
         List<Booking> bookings = new ArrayList<Booking>();
-
-        NodeList nodeList = document.getElementsByTagName("booking");
 
         int number_of_bookings = nodeList.getLength();
 
         for (int i = 0; i < number_of_bookings; i++) {
             Node current_booking = nodeList.item(i);
             String id = ((Element) current_booking.getParentNode().getParentNode()).getElementsByTagName("id").item(0).getTextContent();
+            String lecture_name = ((Element) current_booking.getParentNode().getParentNode()).getElementsByTagName("name").item(0).getTextContent();;
             String current_room = ((Element) current_booking.getChildNodes()).getElementsByTagName("room").item(0).getTextContent();
             String current_weekday = ((Element) current_booking.getChildNodes()).getElementsByTagName("weekday").item(0).getTextContent();
 
@@ -90,17 +96,14 @@ public class Main {
             String current_start_time = ((Element) current_booking.getChildNodes()).getElementsByTagName("startTime").item(0).getTextContent();
             Date current_start_date = format.parse(current_start_time);
 
-
             String current_end_time = ((Element) current_booking.getChildNodes()).getElementsByTagName("endTime").item(0).getTextContent();
             Date current_end_date = format.parse(current_end_time);
 
-            bookings.add(new Booking(id, current_weekday, current_room, current_start_date, current_end_date));
+            bookings.add(new Booking(id, current_weekday, current_room, current_start_date, current_end_date, lecture_name));
 
         }
 
         // add curricula to bookings
-
-        NodeList curricula = document.getElementsByTagName("curriculum");
 
         int number_of_curricula = curricula.getLength();
 
@@ -132,14 +135,21 @@ public class Main {
         for (int i = 0; i < bookings.size(); i++) {
             for (int j = i + 1; j < bookings.size(); j++) {
                 if (bookings.get(i).has_room_conflict(bookings.get(j))) {
-                    System.out.println("Room Conflict:");
-                    System.out.println(bookings.get(i).lecture_id);
-                    System.out.println(bookings.get(j).lecture_id);
+                    System.out.println("\nRoom Conflict:");
+                    System.out.println(bookings.get(i).room);
+                    System.out.println(bookings.get(i).lecture_name);
+                    System.out.println(bookings.get(i).start_time);
+                    System.out.println(bookings.get(i).end_time);
+                    System.out.println(bookings.get(j).lecture_name);
+                    System.out.println(bookings.get(j).start_time);
+                    System.out.println(bookings.get(j).end_time);
                 }
                 if (bookings.get(i).has_curriculum_conflict(bookings.get(j))) {
-                    System.out.println("Curriculum Conflict:");
-                    System.out.println(bookings.get(i).lecture_id);
-                    System.out.println(bookings.get(j).lecture_id);
+                    System.out.println("\nCurriculum Conflict:");
+                    System.out.println(bookings.get(i).curricula);
+                    System.out.println(bookings.get(i).lecture_name);
+                    System.out.println(bookings.get(j).curricula);
+                    System.out.println(bookings.get(j).lecture_name);
                 }
             }
         }
