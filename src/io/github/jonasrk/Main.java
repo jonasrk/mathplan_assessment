@@ -95,10 +95,15 @@ public class Main {
                 }
                 if (bookings.get(i).has_curriculum_conflict(bookings.get(j))) {
                     System.out.println("\nCurriculum Conflict:");
-                    System.out.println(bookings.get(i).curricula);
+                    ArrayList<String> intersection = new ArrayList<String>(bookings.get(i).curricula);
+                    intersection.retainAll(bookings.get(j).curricula);
+                    intersection.forEach(x -> System.out.println(x));
                     System.out.println(bookings.get(i).lecture_name);
-                    System.out.println(bookings.get(j).curricula);
+                    System.out.println(bookings.get(i).start_time);
+                    System.out.println(bookings.get(i).end_time);
                     System.out.println(bookings.get(j).lecture_name);
+                    System.out.println(bookings.get(j).start_time);
+                    System.out.println(bookings.get(j).end_time);
                 }
             }
         }

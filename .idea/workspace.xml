@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="392c2e04-9c32-484d-976e-51264e9f1569" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" afterPath="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jonasrk/Main.java" afterPath="$PROJECT_DIR$/src/io/github/jonasrk/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,28 +18,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+            <state relative-caret-position="248">
+              <caret line="102" column="65" lean-forward="true" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1185#1194#0" expanded="true" />
+                <element signature="e#4412#4420#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Booking.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Booking.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Booking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+            <state relative-caret-position="224">
+              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#277#285#0" expanded="true" />
-                <element signature="e#1337#1345#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +120,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/io/github/jonasrk/Main.java" />
         <option value="$PROJECT_DIR$/src/io/github/jonasrk/Booking.java" />
+        <option value="$PROJECT_DIR$/src/io/github/jonasrk/Main.java" />
       </list>
     </option>
   </component>
@@ -153,6 +152,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,10 +201,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,15 +278,16 @@
       <updated>1512490788288</updated>
       <workItem from="1512490793059" duration="3452000" />
       <workItem from="1512725732917" duration="5676000" />
-      <workItem from="1512819035833" duration="2514000" />
+      <workItem from="1512819035833" duration="3014000" />
+      <workItem from="1513777753153" duration="433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11642000" />
+    <option name="totallyTimeSpent" value="12575000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="22" width="1366" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -299,12 +299,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48318043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48208955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18228404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -318,6 +317,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -336,11 +336,85 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4412#4420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetable.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="n#lecture#0;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#0;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#0;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#1;n#roombookings#0;n#lecture#0;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#1;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#1;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#1;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#1;n#roombookings#0;n#lecture#1;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#2;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#2;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#2;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#1;n#roombookings#0;n#lecture#2;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#3;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#3;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#3;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#4;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#4;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#4;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#1;n#roombookings#0;n#lecture#4;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#5;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#5;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#5;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#6;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#6;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#6;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#7;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#7;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#7;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#1;n#roombookings#0;n#lecture#7;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#8;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#8;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#8;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#1;n#roombookings#0;n#lecture#8;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#lecture#9;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#roombookings#0;n#lecture#9;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+            <element signature="n#booking#0;n#roombookings#0;n#lecture#9;n#lectures#0;n#university#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timetable.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1185#1194#0" expanded="true" />
+            <element signature="e#4412#4420#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -404,7 +478,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1185#1194#0" expanded="true" />
+            <element signature="e#4412#4420#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -507,25 +581,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Booking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        <state relative-caret-position="224">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1185#1194#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Booking.java">
+    <entry file="file://$PROJECT_DIR$/src/io/github/jonasrk/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+        <state relative-caret-position="248">
+          <caret line="102" column="65" lean-forward="true" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#277#285#0" expanded="true" />
-            <element signature="e#1337#1345#0" expanded="true" />
+            <element signature="e#4412#4420#0" expanded="true" />
           </folding>
         </state>
       </provider>
