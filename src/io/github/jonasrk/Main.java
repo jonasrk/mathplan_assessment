@@ -17,11 +17,13 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, ParseException {
+    public static List<Booking> extractBookingsFromXML (String path_to_xml_file) throws ParserConfigurationException, IOException, SAXException, ParseException {
 
-        File file = new File("timetable.xml");
+        File file = new File(path_to_xml_file);
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory
                 .newInstance();
+
+
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse(file);
 
@@ -79,6 +81,16 @@ public class Main {
             }
         }
 
+        return bookings;
+
+    }
+
+    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, ParseException {
+
+
+        List<Booking> bookings = extractBookingsFromXML("timetable.xml");
+
+
         // compare all bookings with one another and check for conflicts
 
         for (int i = 0; i < bookings.size(); i++) {
@@ -87,9 +99,11 @@ public class Main {
                     System.out.println("\nRoom Conflict:");
                     System.out.println(bookings.get(i).room);
                     System.out.println(bookings.get(i).lecture_name);
+                    System.out.println(bookings.get(i).weekday);
                     System.out.println(bookings.get(i).start_time);
                     System.out.println(bookings.get(i).end_time);
                     System.out.println(bookings.get(j).lecture_name);
+                    System.out.println(bookings.get(j).weekday);
                     System.out.println(bookings.get(j).start_time);
                     System.out.println(bookings.get(j).end_time);
                 }
@@ -99,9 +113,11 @@ public class Main {
                     intersection.retainAll(bookings.get(j).curricula);
                     intersection.forEach(x -> System.out.println(x));
                     System.out.println(bookings.get(i).lecture_name);
+                    System.out.println(bookings.get(i).weekday);
                     System.out.println(bookings.get(i).start_time);
                     System.out.println(bookings.get(i).end_time);
                     System.out.println(bookings.get(j).lecture_name);
+                    System.out.println(bookings.get(j).weekday);
                     System.out.println(bookings.get(j).start_time);
                     System.out.println(bookings.get(j).end_time);
                 }

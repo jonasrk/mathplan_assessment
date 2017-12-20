@@ -19,8 +19,10 @@ class Booking {
         this.lecture_name = lecture_name;
     }
 
-    private Boolean time_of_day_has_conflict(Booking other){
-        if (other.end_time.before(this.start_time) | other.end_time.equals(this.start_time)){
+    private Boolean time_in_week_has_conflict(Booking other){
+        if (other.weekday.equals(this.weekday) == false){
+            return false;
+        } else if (other.end_time.before(this.start_time) | other.end_time.equals(this.start_time)){
             return false;
         } else if (other.start_time.after(this.end_time) | other.start_time.equals(this.end_time)){
             return false;
@@ -30,8 +32,8 @@ class Booking {
     }
 
     public Boolean has_room_conflict(Booking other){
-        if (other.weekday.equals(this.weekday) & other.room.equals(this.room)){
-            return time_of_day_has_conflict(other);
+        if (other.room.equals(this.room)){
+            return time_in_week_has_conflict(other);
         } else {
             return false;
         }
@@ -40,8 +42,8 @@ class Booking {
     public Boolean has_curriculum_conflict(Booking other){
         ArrayList<String> intersection = new ArrayList<String>(this.curricula);
         intersection.retainAll(other.curricula);
-        if (intersection.size() > 0 & this.lecture_id != other.lecture_id & other.weekday.equals(this.weekday)){
-            return time_of_day_has_conflict(other);
+        if (intersection.size() > 0 & this.lecture_id != other.lecture_id){
+            return time_in_week_has_conflict(other);
         } else {
             return false;
         }
